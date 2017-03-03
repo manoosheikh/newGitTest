@@ -1,0 +1,20 @@
+{
+  "name": "socket-chat-example",
+  "version": "0.1.0",
+  "description": "Socket.IO example - WebTech 2 - RWTH Aachen University",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebTech2-Group123/webtech-chat.git"
+  },
+  "homepage": "https://github.com/WebTech2-Group123/webtech-chat",
+  "author": "Group 123",
+  "license": "MIT",
+  "dependencies": {
+    "socket.io": "^1.3.7"
+  },
+  "private": true
+}

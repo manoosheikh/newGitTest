@@ -1,0 +1,78 @@
+/* Chat Page - initially hidden */
+
+.chat.page {
+    display: none;
+}
+
+.chat.page .chat-wrapper {
+    height: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin: auto;
+}
+
+.chat.page .chat-wrapper .chat-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.chat.page .chat-wrapper .chat-main {
+    display: flex;
+    height: 100%;
+}
+
+.chat.page .chat-wrapper .chat-main .chat-users {
+    width: 200px;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width : 768px) {
+    .chat.page .chat-wrapper .chat-main .chat-users {
+        display: none;
+    }
+}
+
+.chat.page .chat-wrapper .chat-main .chat-messages {
+    flex-grow: 1;
+    height: 100%;
+    margin: 10px 0 10px 20px;
+    padding: 10px 0;
+    overflow-y: scroll;
+    list-style: none;
+}
+
+.chat.page .chat-wrapper .chat-main .chat-messages > .log {
+    color: gray;
+    margin: 14px;
+    text-align: center;
+}
+
+.chat.page .chat-wrapper .chat-main .chat-messages .message.typing {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.chat.page .chat-wrapper .chat-main .chat-messages .message.typing .message-body {
+    color: gray;
+}
+
+.chat.page .chat-wrapper .chat-input {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    border: 7px solid #000;
+    outline: none;
+}
+
+.chat.page .chat-wrapper .username {
+    padding-right: 15px;
+    font-weight: 700;
+    overflow: hidden;
+}

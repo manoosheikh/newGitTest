@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Socket.IO chat</title>
+    <link rel="icon" href="img/favicon.png">
+
+    <!-- load CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+
+<body>
+
+    <!-- login page -->
+    <div class="page login">
+        <div class="login-wrapper">
+            <h1 class="login-title">What's your nickname?</h1>
+            <input class="login-username" type="text" maxlength="16" />
+            <p class="login-error">Username already taken, try with another one</p>
+        </div>
+    </div>
+
+    <!-- chat page (initially hidden) -->
+    <div class="page chat">
+        <div class="chat-wrapper">
+            <h1 class="chat-title">RWTH Socket.IO Chat</h1>
+            <div class="chat-main">
+                <div class="chat-users">
+                    <h2>ONLINE USERS</h2>
+                    <ul></ul>
+                </div>
+                <ul class="chat-messages"></ul>
+            </div>
+            <input class="chat-input" placeholder="Type here..." />
+        </div>
+    </div>
+
+    <!-- include socket.io -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- load JS -->
+    <script src="lib/jquery-2.1.4.min.js"></script>
+    <script src="lib/jquery-ui.min.js"></script>
+    <script src="js/chat.js"></script>
+
+</body>
+
+</html>

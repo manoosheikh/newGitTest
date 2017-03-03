@@ -1,0 +1,39 @@
+/* Login Page */
+
+.login.page {
+    background-color: #000;
+    color: #fff;
+}
+
+.login.page .login-wrapper {
+    position: absolute;
+    height: 100px;
+    margin-top: -100px;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+
+.login.page .login-wrapper .login-title {
+    font-size: 200%;
+    font-weight: 100;
+}
+
+.login.page .login-wrapper .login-username {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 400px;
+    max-width: 90%;
+    font-size: 200%;
+    letter-spacing: 3px;
+    font-weight: 100;
+    color: #fff;
+}
+
+.login.page .login-wrapper .login-error {
+    display: none;
+}
